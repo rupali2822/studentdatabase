@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Loginspf</string>
+    <string-array name="spinnerlist">
+        <item>Select language</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Android</item>
+        <item>HTML</item>
+    </string-array>
+</resources>

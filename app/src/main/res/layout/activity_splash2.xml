@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AF9D5A"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:visibility="visible"
+    tools:context=".SplashActivity2">
+
+    <TextView
+android:id="@+id/text_View"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Student Database
+        Management System"
+        android:textColor="@color/purple_700"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Image_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="@id/text_View"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dbanimation" />
+
+
+</LinearLayout>

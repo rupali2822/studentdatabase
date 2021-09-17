@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity2"
+    android:orientation="vertical"
+    android:background="#758283">
+    <EditText
+        android:id="@+id/et_roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student roll no"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_bg"/>
+    <EditText
+        android:id="@+id/et_sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+       android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_bg"/>
+
+    <EditText
+        android:id="@+id/et_edu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Education"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_bg"
+        />
+    <EditText
+        android:id="@+id/et_marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="marks"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_bg"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Insert"
+        android:background="#009688"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#03203C"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:text="Show"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Update"
+            android:textStyle="bold"
+            android:background="#03203C"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Delete"
+            android:textStyle="bold"
+            android:background="#03203C"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/List_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="#AF9D5A"/>
+</LinearLayout>
