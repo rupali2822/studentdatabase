@@ -1,14 +1,11 @@
-package com.techsum.loginspf
+package com.techsum.spf
 
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import androidx.lifecycle.MediatorLiveData
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_student2.*
 
@@ -31,6 +28,10 @@ btn_sign_in.setOnClickListener{
     var un=spf.getString("uname","admin")
     var ps=spf.getString("pass","admin")
 
+    Log.d("uname",un.toString());
+    Log.d("pass",ps.toString());
+
+
     if(username.isEmpty()){
         et_username.error="Username required"
         return@setOnClickListener
@@ -45,6 +46,7 @@ btn_sign_in.setOnClickListener{
 
     if(un.equals(username) && ps.equals(password))
     {
+
        var intent=Intent(this,StudentActivity2::class.java)
         intent.putExtra("user",username)
         startActivity(intent)

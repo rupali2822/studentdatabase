@@ -1,15 +1,11 @@
-package com.techsum.loginspf
+package com.techsum.spf
 
 import android.content.ContentValues
 import android.content.Context
-import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import android.database.sqlite.SQLiteDatabase
 import android.widget.SimpleCursorAdapter
-import androidx.appcompat.app.AlertDialog
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_student2.*
 
 class StudentActivity2 : AppCompatActivity() {
@@ -49,7 +45,7 @@ class StudentActivity2 : AppCompatActivity() {
         //cursor Adapter
         btn_show.setOnClickListener {
             var cursor = sqlitedb.query("studentinfo", null, null, null, null, null, null)
-            var fromarray = arrayOf("sroll", "sname", "sedu", "smarks")
+            var fromarray = arrayOf("sroll", "sname", "sedu", "smark")
             var intArray = intArrayOf(R.id.tv1, R.id.tv2, R.id.tv3, R.id.tv4)
 
             var cursoradapter = SimpleCursorAdapter(this,
@@ -81,7 +77,7 @@ class StudentActivity2 : AppCompatActivity() {
         }
         btn_delete.setOnClickListener {
             var roll_number = et_roll.text.toString()
-            var status = sqlitedb.delete("studentinfo", "sroll=?,", arrayOf(roll_number))
+            var status = sqlitedb.delete("studentinfo", "sroll=?", arrayOf(roll_number))
             if (status > 0) {
                 Toast.makeText(this, "Data deleted successfully", Toast.LENGTH_SHORT).show()
             } else {
