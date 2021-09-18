@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Loginspf</string>
+
+<!--    app name change from here-->
+    <string name="app_name">Student Database</string>
     <string-array name="spinnerlist">
         <item>Select language</item>
         <item>C++</item>

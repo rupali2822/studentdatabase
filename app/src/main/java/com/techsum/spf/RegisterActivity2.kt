@@ -1,13 +1,11 @@
-package com.techsum.loginspf
+package com.techsum.spf
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Toast
-import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_register2.*
 import kotlinx.android.synthetic.main.activity_register2.et_password

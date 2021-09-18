@@ -1,4 +1,4 @@
-package com.techsum.loginspf
+package com.techsum.spf
 
 import org.junit.Test
 
